@@ -1,0 +1,77 @@
+#
+msgid ""
+msgstr ""
+"Language: ca\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Open navigation menu"
+msgstr "Obre el menú de navegació"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Primary"
+msgstr "Principal"
+
+msgid "Show search overlay"
+msgstr "Mostra el cercador"
+
+msgid "Search"
+msgstr "Cerca"
+
+msgid "Search our website"
+msgstr "Cerca al web"
+
+msgid "Enter your email"
+msgstr "Escriu el teu correu electrònic"
+
+msgid "Sign up"
+msgstr "Subscriu-t'hi"
+
+msgid "Follow us"
+msgstr "Segueix-nos"
+
+msgid "Theme toggle"
+msgstr "Canvia entre tema clar i fosc"
+
+msgid "Read more"
+msgstr "Més informació"
+
+msgid "0 results"
+msgstr "0 resultats"
+
+msgid "There are no matching results."
+msgstr "No hi ha cap resultat."
+
+msgid "Improve your results by:"
+msgstr "Pots millorar els resultats:"
+
+msgid "double-checking your spelling"
+msgstr "revisant l'ortografia"
+
+msgid "using fewer keywords"
+msgstr "fent servir menys paraules clau"
+
+msgid "searching for something less specific"
+msgstr "cercant alguna cosa menys concreta"
+
+msgid "Submit"
+msgstr "Envia"
+
+msgid "Page not found"
+msgstr "No s'ha trobat la pàgina"
+
+msgid "Sorry, this page could not be found."
+msgstr "Aquesta pàgina no existeix o s'ha mogut."
+
+msgid "Services"
+msgstr "Serveis"
+
+msgid "Ask for a quote"
+msgstr "Demana pressupost"
+
+msgid "%(count)s result"
+msgid_plural "%(count)s results"
+msgstr[0] "%(count)s resultat"
+msgstr[1] "%(count)s resultats"

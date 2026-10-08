@@ -1,0 +1,58 @@
+
+{% extends "base_page.html" %}
+{% load i18n %}
+{% load wagtailcore_tags wagtailimages_tags static %}
+
+{% block content %}
+    <div class="site-padding site-container">
+        <div class="relative max-w-[872px] pt-32 tall:pt-40 pb-40 md:pb-60">
+            <h1 class="font-serif4 [word-spacing:-6px] font-bold text-7xl lg:text-10xl">
+                {{ page.title }}
+            </h1>
+
+            <div class="
+                absolute
+                overflow-hidden
+                z-[-1]
+                right-[-78px]
+                top-[98px]
+                w-52
+                h-52
+                md:right-[-131px]
+                md:top-[24px]
+                tall:md:top-[131px]
+                md:w-64
+                md:h-64
+                rotate-[32deg]
+                border-[3px]
+                rounded-3xl
+                border-dashed
+                border-mackerel-200"
+            >
+            </div>
+            <div class="max-w-[636px] pt-5 rich-text">
+                {{ page.introduction|linebreaks }}
+            </div>
+            {% if page.hero_cta %}
+                <div class="pt-10">
+                    {% include "components/button.html" with title=page.hero_cta.0.value.get_title url=page.hero_cta.0.value.get_url %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if services %}
+        <section class="site-padding site-container pb-20 md:pb-40">
+            {% translate "Services" as services_heading %}
+            {% firstof services_index.title services_heading as services_heading %}
+            {% include "components/streamfield/blocks/heading2_block.html" with value=services_heading %}
+            {% include "components/service-cards.html" %}
+        </section>
+    {% endif %}
+
+    {% include_block page.body %}
+
+    {% include "components/related-pages.html" %}
+
+{% endblock %}
+

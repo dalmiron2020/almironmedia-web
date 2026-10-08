@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% translate "Page not found" %}{% endblock %}
+
+{% block body_class %}template-404{% endblock %}
+
+{% block content %}
+<div class="site-padding site-container py-20">
+    <h1 class="font-serif4 font-bold text-7xl">{% translate "Page not found" %}</h1>
+    <p class="pt-7">{% translate "Sorry, this page could not be found." %}</p>
+</div>
+{% endblock %}
+

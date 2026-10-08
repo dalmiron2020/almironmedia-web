@@ -1,0 +1,77 @@
+#
+msgid ""
+msgstr ""
+"Language: es\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Open navigation menu"
+msgstr "Abrir el menú de navegación"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Primary"
+msgstr "Principal"
+
+msgid "Show search overlay"
+msgstr "Mostrar el buscador"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Search our website"
+msgstr "Busca en la web"
+
+msgid "Enter your email"
+msgstr "Escribe tu correo electrónico"
+
+msgid "Sign up"
+msgstr "Suscríbete"
+
+msgid "Follow us"
+msgstr "Síguenos"
+
+msgid "Theme toggle"
+msgstr "Cambiar entre tema claro y oscuro"
+
+msgid "Read more"
+msgstr "Más información"
+
+msgid "0 results"
+msgstr "0 resultados"
+
+msgid "There are no matching results."
+msgstr "No hay ningún resultado."
+
+msgid "Improve your results by:"
+msgstr "Puedes mejorar los resultados:"
+
+msgid "double-checking your spelling"
+msgstr "revisando la ortografía"
+
+msgid "using fewer keywords"
+msgstr "usando menos palabras clave"
+
+msgid "searching for something less specific"
+msgstr "buscando algo menos concreto"
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+msgid "Sorry, this page could not be found."
+msgstr "Esta página no existe o se ha movido."
+
+msgid "Services"
+msgstr "Servicios"
+
+msgid "Ask for a quote"
+msgstr "Pide presupuesto"
+
+msgid "%(count)s result"
+msgid_plural "%(count)s results"
+msgstr[0] "%(count)s resultado"
+msgstr[1] "%(count)s resultados"

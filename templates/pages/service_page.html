@@ -1,0 +1,28 @@
+{% extends "base_page.html" %}
+{% load wagtailcore_tags i18n %}
+
+{% block content %}
+    {% block breadcrumbs %}
+        {% include "navigation/breadcrumbs.html" %}
+    {% endblock %}
+    <div class="site-padding site-container">
+        <div class="max-w-[872px] py-20">
+            <h1 class="font-serif4 [word-spacing:-6px] font-bold text-7xl lg:text-10xl">
+                {{ page.title }}
+            </h1>
+            {% if page.introduction %}
+                <p class="max-w-[636px] pt-7 rich-text">{{ page.introduction }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    {% include_block page.body %}
+
+    {% if contact_page %}
+        <div class="site-padding site-container pb-20 md:pb-40">
+            {% translate "Ask for a quote" as cta_title %}
+            {% pageurl contact_page as contact_url %}
+            {% include "components/button.html" with title=cta_title url=contact_url %}
+        </div>
+    {% endif %}
+{% endblock %}

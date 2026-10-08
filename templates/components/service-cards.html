@@ -1,0 +1,24 @@
+{% load wagtailcore_tags %}
+
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+    {% for service in services %}
+        <li class="flex flex-col p-8 md:p-10 border-[1px] border-mackerel-200 rounded-md">
+            <a
+                href="{% pageurl service %}"
+                class="
+                text-xl md:text-2xl font-bold leading-8 md:leading-10
+                underline
+                underline-offset-8
+                decoration-[1.5px]
+                decoration-mackerel-200
+                hover:decoration-mackerel-300
+                "
+            >
+                {% firstof service.listing_title service.title %}
+            </a>
+            <p class="text-grey-700 dark:text-grey-200 pt-4 leading-6">
+                {% firstof service.listing_summary service.introduction %}
+            </p>
+        </li>
+    {% endfor %}
+</ul>

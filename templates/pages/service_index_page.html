@@ -1,0 +1,26 @@
+{% extends "base_page.html" %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+    {% block breadcrumbs %}
+        {% include "navigation/breadcrumbs.html" %}
+    {% endblock %}
+    <div class="site-padding site-container">
+        <div class="max-w-[872px] py-20">
+            <h1 class="font-serif4 [word-spacing:-6px] font-bold text-7xl lg:text-10xl">
+                {{ page.title }}
+            </h1>
+            {% if page.introduction %}
+                <p class="max-w-[636px] pt-7 rich-text">{{ page.introduction }}</p>
+            {% endif %}
+        </div>
+
+        {% if services %}
+            <section class="pb-20 md:pb-40">
+                {% include "components/service-cards.html" %}
+            </section>
+        {% endif %}
+    </div>
+
+    {% include_block page.body %}
+{% endblock %}
